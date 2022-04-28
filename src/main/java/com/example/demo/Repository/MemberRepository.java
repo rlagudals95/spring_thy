@@ -3,6 +3,8 @@ package com.example.demo.Repository;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Repository;
+
 import com.example.demo.domain.Member;
 
 public interface MemberRepository {

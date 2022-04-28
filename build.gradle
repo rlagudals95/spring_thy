@@ -22,6 +22,13 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok:1.18.24'
 	testCompileOnly 'org.projectlombok:lombok:1.18.24'
 	testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+	 // 데이터를 연동하기 위함
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    
+	 //mariadb 사용
+    compile("mysql:mysql-connector-java:5.1.34")
+    compile("org.mariadb.jdbc:mariadb-java-client")
 }
 
 tasks.named('test') {

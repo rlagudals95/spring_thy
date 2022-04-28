@@ -3,10 +3,13 @@ package com.example.demo.service;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Service;
+
 import com.example.demo.Repository.MemberRepository;
 import com.example.demo.Repository.MemoryMemberRepository;
 import com.example.demo.domain.Member;
 
+@Service("memberService")
 public class MemberService {
 	// final 키워드는 엔티티를 한 번만 할당합니다. 즉, 두 번 이상 할당하려 할 때 컴파일 오류가 발생하여 확인이 가능합니다.
 	private final MemberRepository memberRepository = new MemoryMemberRepository();
